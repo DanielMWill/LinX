@@ -314,6 +314,26 @@ img{
   color: var(--first-color-light);
 }
 
+/*ANIMATION klappt noch nicht */
+.home__img {
+  -webkit-animation: airpods 3s infinite;
+          animation: airpods 3s infinite;
+}
+
+@-webkit-keyframes home__img {
+  50% {
+    -webkit-transform: translatey(-6%);
+            transform: translatey(-6%);
+  }
+}
+
+@keyframes home__img {
+  50% {
+    -webkit-transform: translatey(-6%);
+            transform: translatey(-6%);
+  }
+}
+
 /*BUTTONS*/
 .button {
   display: inline-block;
@@ -357,7 +377,7 @@ button:hover {
 }
 
 .about__description span {
-  font-size: var(--h2-font-size);
+  font-size: var(--normal-font-size);
   font-weight: var(--font-semi-bold);
   color: var(--first-color);
 }
@@ -675,6 +695,7 @@ button:hover {
   }
 
   .about__container, 
+  .about__container__portfolio,
   .qualification__container, 
   .services__container,
   .portfolio__container {
